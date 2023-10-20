@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+#background {
+  height: 750px;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 10%
+    ),
+    url("assets/stranger-things.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+#background-info {
+  width: 450px;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.head_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.stranger-things-logo {
+  width: 80%;
+}
+
+.introduction {
+  color: white;
+  font-family: "Poppins";
+  font-size: 1.3rem;
+}
+
+.section {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#logo,
+#icon {
+  height: 40px;
+  padding: 10px;
+}
+
+.button {
+  background-color: rgba(128, 128, 128, 0.5);
+  border: none;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 155px;
+  height: 50px;
+  font-size: 1.5rem;
+  pointer-events: auto;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 10px black;
+}
+
+.poster {
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.poster:hover {
+  transform: scale(1.15);
+  z-index: 10;
+}
